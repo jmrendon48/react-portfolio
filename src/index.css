@@ -307,7 +307,11 @@ a {
   color: white;
 }
 
+.about {
+  padding: 25px;
+}
+
 .self-portrait {
-  width: 20%;
-  height: 20%;
+  width: 15rem;
+  height: auto;
 }
