@@ -44,7 +44,7 @@ body {
   font-size: 18px;
   letter-spacing: .1em;
   background: var(--tertiary-color);
-  color: var(--light);
+  color: var(--secondary-color);
   font-family: 'Poiret One', cursive;
 
 }
@@ -301,6 +301,10 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+.white {
+  color: white;
 }
 
 .self-portrait {
