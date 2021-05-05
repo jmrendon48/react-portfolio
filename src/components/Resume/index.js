@@ -16,6 +16,7 @@ function Resume() {
           <li className="proficiency">Node</li>
           <li className="proficiency">MongoDB</li>
           <li className="proficiency">React</li>
+          <li className="proficiency">MySQL</li>
         </ul>
       </div>
       <div className="resume-container">
