@@ -42,10 +42,9 @@ body {
   font-weight: 600;
   line-height: 1.5;
   font-size: 18px;
-  letter-spacing: .1em;
   background: var(--tertiary-color);
   color: var(--secondary-color);
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One';
 
 }
 

@@ -77,6 +77,10 @@ function ContactForm() {
           Submit
         </button>
       </form>
+
+      <h2>You can also reach me at the following:</h2>
+      <a href = "mailto: jmrendon48@gmail.com" className="block">jmrendon48@gmail.com</a>
+      <a href="tel:818-439-5445" className="block">818-439-5445</a>
     </section>
   );
 }
