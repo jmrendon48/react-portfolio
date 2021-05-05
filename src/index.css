@@ -347,3 +347,19 @@ header {
 .contact-button {
   background-color: #2E0854;
 }
+
+.proficiency-container, .resume-container {
+  margin: 50px 100px;
+}
+
+.proficiency-title {
+  font-size: 40px;
+}
+
+.proficiency {
+  font-size: 20px;
+}
+
+.resume-download {
+  font-size: 25px;
+}
