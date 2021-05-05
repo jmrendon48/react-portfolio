@@ -1,26 +1,46 @@
 import React from "react";
 
-function Nav() {
-  function categorySelected() {
-    console.log("hello");
-  }
+function Nav(props) {
+  const {
+    aboutSelected,
+    setAboutSelected,
+    portfolioSelected,
+    setPortfolioSelected,
+  } = props;
 
   return (
-    <header>
-      <h1 className="white">Joshua M. Rendon</h1>
+    <header className="flex-row align-items">
+      <h2 className="white">Joshua M. Rendon</h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" className="white">About Me</a>
+            <a
+              href="#about"
+              className={`${!aboutSelected && "white"} ${aboutSelected && "navActive"}`}
+              onClick={() => {
+                setAboutSelected(true);
+                setPortfolioSelected(false);
+              }}
+            >
+              About Me
+            </a>
           </li>
           <li className="mx-2">
-            <span onClick={categorySelected} className="white">Portfolio</span>
+            <span
+              className={`${!portfolioSelected && "white"} ${portfolioSelected && "navActive"}`}
+              onClick={() => {
+                setAboutSelected(false);
+                setPortfolioSelected(true);
+              }}
+            >
+              Portfolio
+            </span>
           </li>
           <li className="mx-2">
-            <span onClick={categorySelected} className="white">Contact</span>
+            <span className="white">Contact</span>
           </li>
           <li className="mx-2">
-            <span onClick={categorySelected} className="white">Resume</span>
+            <span className="white">Resume</span>
           </li>
         </ul>
       </nav>

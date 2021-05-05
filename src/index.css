@@ -247,7 +247,6 @@ textarea {
 .img-thumbnail {
   width: auto;
   height: 300px;
-  margin-bottom: 50px;
   cursor: pointer;
 }
 
@@ -300,7 +299,7 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: yellow;
 }
 
 .white {
@@ -308,10 +307,36 @@ a {
 }
 
 .about {
-  padding: 25px;
+  padding: 40px;
 }
 
 .self-portrait {
   width: 15rem;
   height: auto;
+}
+
+.project-list-container {
+  display: relative;
+}
+
+.project {
+  margin: 20px auto;
+  border-style: solid;
+  padding: 15px;
+}
+
+.project-list-title {
+  margin: 30px 40px 10px 40px;
+}
+
+.block {
+  display: block;
+}
+
+.align-items {
+  align-items: center;
+}
+
+header {
+  padding: 15px 30px;;
 }
