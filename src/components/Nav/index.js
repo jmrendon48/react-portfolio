@@ -6,6 +6,8 @@ function Nav(props) {
     setAboutSelected,
     portfolioSelected,
     setPortfolioSelected,
+    contactSelected,
+    setContactSelected,
   } = props;
 
   return (
@@ -16,10 +18,13 @@ function Nav(props) {
           <li className="mx-2">
             <a
               href="#about"
-              className={`${!aboutSelected && "white"} ${aboutSelected && "navActive"}`}
+              className={`${!aboutSelected && "white"} ${
+                aboutSelected && "navActive"
+              }`}
               onClick={() => {
                 setAboutSelected(true);
                 setPortfolioSelected(false);
+                setContactSelected(false);
               }}
             >
               About Me
@@ -27,17 +32,31 @@ function Nav(props) {
           </li>
           <li className="mx-2">
             <span
-              className={`${!portfolioSelected && "white"} ${portfolioSelected && "navActive"}`}
+              className={`${!portfolioSelected && "white"} ${
+                portfolioSelected && "navActive"
+              }`}
               onClick={() => {
                 setAboutSelected(false);
                 setPortfolioSelected(true);
+                setContactSelected(false);
               }}
             >
               Portfolio
             </span>
           </li>
           <li className="mx-2">
-            <span className="white">Contact</span>
+            <span
+              className={`${!contactSelected && "white"} ${
+                contactSelected && "navActive"
+              }`}
+              onClick={() => {
+                setAboutSelected(false);
+                setPortfolioSelected(false);
+                setContactSelected(true);
+              }}
+            >
+              Contact
+            </span>
           </li>
           <li className="mx-2">
             <span className="white">Resume</span>
