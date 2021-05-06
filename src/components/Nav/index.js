@@ -18,8 +18,7 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a
-              href="#about"
+            <span
               className={`${!aboutSelected && "white"} ${
                 aboutSelected && "navActive"
               }`}
@@ -31,7 +30,7 @@ function Nav(props) {
               }}
             >
               About Me
-            </a>
+            </span>
           </li>
           <li className="mx-2">
             <span

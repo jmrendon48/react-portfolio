@@ -4,6 +4,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
+import Footer from "./components/Footer";
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
@@ -12,47 +13,50 @@ function App() {
   const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
-    <div>
-      <Nav
-        aboutSelected={aboutSelected}
-        setAboutSelected={setAboutSelected}
-        portfolioSelected={portfolioSelected}
-        setPortfolioSelected={setPortfolioSelected}
-        contactSelected={contactSelected}
-        setContactSelected={setContactSelected}
-        resumeSelected={resumeSelected}
-        setResumeSelected={setResumeSelected}
-      ></Nav>
-      <main>
-        {aboutSelected ? (
-          <>
-            <About></About>
-          </>
-        ) : (
-          <></>
-        )}
-        {portfolioSelected ? (
-          <>
-            <Portfolio></Portfolio>
-          </>
-        ) : (
-          <></>
-        )}
-        {contactSelected ? (
-          <>
-            <ContactForm></ContactForm>
-          </>
-        ) : (
-          <></>
-        )}
-        {resumeSelected ? (
-          <>
-            <Resume></Resume>
-          </>
-        ) : (
-          <></>
-        )}
-      </main>
+    <div className="page-container">
+      <div className="content-wrap">
+        <Nav
+          aboutSelected={aboutSelected}
+          setAboutSelected={setAboutSelected}
+          portfolioSelected={portfolioSelected}
+          setPortfolioSelected={setPortfolioSelected}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+          resumeSelected={resumeSelected}
+          setResumeSelected={setResumeSelected}
+        ></Nav>
+        <main>
+          {aboutSelected ? (
+            <>
+              <About></About>
+            </>
+          ) : (
+            <></>
+          )}
+          {portfolioSelected ? (
+            <>
+              <Portfolio></Portfolio>
+            </>
+          ) : (
+            <></>
+          )}
+          {contactSelected ? (
+            <>
+              <ContactForm></ContactForm>
+            </>
+          ) : (
+            <></>
+          )}
+          {resumeSelected ? (
+            <>
+              <Resume></Resume>
+            </>
+          ) : (
+            <></>
+          )}
+        </main>
+      </div>
+      <Footer></Footer>
     </div>
   );
 }
