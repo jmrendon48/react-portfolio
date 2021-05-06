@@ -5,6 +5,7 @@ import Portfolio from "./components/Portfolio";
 import ContactForm from "./components/Contact";
 import Resume from "./components/Resume";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   const [aboutSelected, setAboutSelected] = useState(true);
@@ -15,7 +16,7 @@ function App() {
   return (
     <div className="page-container">
       <div className="content-wrap">
-        <Nav
+        <Header
           aboutSelected={aboutSelected}
           setAboutSelected={setAboutSelected}
           portfolioSelected={portfolioSelected}
@@ -24,7 +25,7 @@ function App() {
           setContactSelected={setContactSelected}
           resumeSelected={resumeSelected}
           setResumeSelected={setResumeSelected}
-        ></Nav>
+        ></Header>
         <main>
           {aboutSelected ? (
             <>

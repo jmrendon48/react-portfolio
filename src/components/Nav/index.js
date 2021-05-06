@@ -13,8 +13,6 @@ function Nav(props) {
   } = props;
 
   return (
-    <header className="flex-row align-items">
-      <h2 className="white">Joshua M. Rendon</h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
@@ -79,7 +77,6 @@ function Nav(props) {
           </li>
         </ul>
       </nav>
-    </header>
   );
 }
 
